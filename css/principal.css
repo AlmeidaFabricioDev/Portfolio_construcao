@@ -1,0 +1,128 @@
+.conteudo__principal{
+    padding-top: 2em ;
+   text-align: center;
+}
+
+.titulo__principal{
+    font-family: var(--fonte-titulo-principal);
+    font-weight: 800;
+    font-size: 4.5rem;
+    color: var(--cor-titulo-principal);
+}
+
+.subtitulo__principal{
+    font-family: var(--fonte-titulo-principal);
+    font-weight: 300;
+    color:  var(--cor-subtitulo-principal);
+}
+
+.conteudo__secundario{
+    display:flex;
+    width: 50vw;
+    flex-direction: row;
+    
+}
+
+
+.dominios{
+   
+    width: 100vw;
+}
+
+.descricao__principal{
+    font-family: var(--fonte-titulo-principal);
+    color: var(--cor-descricao-principal);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.textos{
+    display: flex;
+    justify-content: center;
+    padding: 3em 0;
+}
+
+.icones__principal{
+    display: flex;
+    justify-content: center;
+}
+
+.icone__angular{
+    display: flex;
+    justify-content: center;
+
+}
+
+.rodape__principal{
+    padding-top: 5.5em;
+    display: flex;
+    flex-direction: row ;
+    justify-content: center;
+    align-items: end;
+}
+
+ .rodape{
+    align-self: flex-end;
+    
+    
+ 
+ }
+
+ .rodape__texto{
+    text-align: center;
+    font-weight: 40;
+    font-size: 14px;
+    font-family: var(--fonte-titulo-principal);
+    color: var(--cor-subtitulo-principal);
+ }
+
+
+ @media screen  and (max-width:480px){
+    .conteudo__principal{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+        gap: 1em;
+    
+    }
+
+     .titulo__principal{
+        font-size: 2em;
+      
+       
+    }
+
+    .conteudo__secundario{
+        margin-top: 1em;
+        flex-direction: column;
+        flex-wrap: wrap ;
+    }
+
+  
+    .icones, .icone__angular{
+        width: 35%;
+    }
+
+
+    .dominios{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .textos{
+        text-align: center;
+    }
+
+    .rodape{
+        flex-direction: column;
+        margin: 1em 0 2em 0;
+       
+    }
+
+    .rodape__texto{
+        text-align: center;
+    }
+ }

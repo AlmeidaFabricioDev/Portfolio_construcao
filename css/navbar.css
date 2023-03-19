@@ -1,0 +1,41 @@
+.navegacao{
+    display: flex;
+    justify-content: flex-start;
+    gap: 5em;
+}
+
+.item__nav{
+    text-decoration: none;
+    color: #577F67;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: var(--fonte-item-menu);
+}
+
+.item__nav:hover{
+    padding: 2px 0 0 2px;
+    color: rgb(170, 30, 239);
+}
+
+@media screen  and (max-width:480px){
+
+    *{
+  
+        margin: 0;
+        width: 100vw;
+     
+    }
+
+
+
+
+    .navegacao{
+     
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .item__nav{
+        font-size: 1.5em;
+    }
+}
